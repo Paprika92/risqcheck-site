@@ -3,131 +3,239 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RisqCheck — Support</title>
-  <style>
-    :root {
-      --fond: #FAFAF7;
-      --carte: #ffffff;
-      --foret: #2D5A3D;
-      --sauge: #8FAE8B;
-      --sable: #EDE6DA;
-      --texte: #1A1F1A;
-      --texte2: #6B7268;
+  <title>RisqCheck — Les risques naturels de n'importe quelle adresse en France, en 5 secondes</title>
+  <meta name="description" content="Inondation, argile, radon, séisme, catastrophes naturelles… RisqCheck analyse les 18 risques naturels et technologiques d'une adresse à partir des données officielles Géorisques. App iOS gratuite, sans compte." />
+  <link rel="canonical" href="https://paprika92.github.io/risqcheck-site/" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="RisqCheck — Les risques naturels d'une adresse, en 5 secondes" />
+  <meta property="og:description" content="Inondation, argile, radon… Le diagnostic complet de n'importe quelle adresse en France, à partir des données officielles Géorisques. App iOS, sans compte, sans collecte." />
+  <meta property="og:url" content="https://paprika92.github.io/risqcheck-site/" />
+  <meta property="og:image" content="https://paprika92.github.io/risqcheck-site/assets/img/og-image.png" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "RisqCheck",
+    "operatingSystem": "iOS",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "Diagnostic des 18 risques naturels et technologiques d'une adresse en France, à partir des données officielles Géorisques (BRGM / Ministère de la Transition écologique).",
+    "url": "https://apps.apple.com/fr/app/id6790358442",
+    "inLanguage": "fr",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
     }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, 'Segoe UI', 'Helvetica Neue', sans-serif;
-      background: var(--fond);
-      color: var(--texte);
-      line-height: 1.6;
-    }
-    .conteneur { max-width: 680px; margin: 0 auto; padding: 48px 24px 64px; }
-    h1 { color: var(--foret); font-size: 2rem; margin: 0; }
-    .sous-titre { color: var(--texte2); margin: 4px 0 32px; }
-    .carte {
-      background: var(--carte);
-      border-radius: 16px;
-      padding: 24px;
-      margin-bottom: 16px;
-      box-shadow: 0 2px 8px rgba(26, 31, 26, 0.05);
-    }
-    h2 { font-size: 1.05rem; margin: 0 0 8px; }
-    p { margin: 0 0 8px; }
-    a { color: var(--foret); }
-    .pied { color: var(--texte2); font-size: 0.85rem; margin-top: 32px; }
-  </style>
+  }
+  </script>
 </head>
 <body>
-  <div class="conteneur">
-    <h1>RisqCheck</h1>
-    <p class="sous-titre">Risques naturels par adresse — support</p>
 
-    <div class="carte">
-      <p><strong>Ces informations sont publiques. Elles vous appartiennent. RisqCheck vous les rend.</strong></p>
-      <p>
-        Tapez une adresse : en 5 secondes, les 18 risques naturels et technologiques analysés à
-        partir des données officielles Géorisques (BRGM / Ministère de la Transition écologique) —
-        les mêmes que celles des notaires, enfin lisibles.
-      </p>
-
-      <h2>Vous savez tout, en 5 secondes</h2>
-      <p>
-        Argile, inondation, remontée de nappe, radon, séisme, sites pollués, cavités, catastrophes
-        naturelles... Le diagnostic complet de n'importe quelle adresse en France, avec le niveau
-        d'exposition à l'adresse près.
-      </p>
-
-      <h2>Vous comprenez, sans jargon</h2>
-      <p>
-        Chaque risque expliqué simplement : c'est quoi, ce que ça implique pour vous, ce qu'il faut
-        savoir. Les sigles (ERP, CatNat, PPRI...) expliqués d'un tap.
-      </p>
-
-      <h2>Vous savez quoi faire</h2>
-      <p>
-        Une checklist personnalisée selon les risques de l'adresse et votre situation (j'achète, je
-        loue, propriétaire) : les questions à poser au vendeur, les documents à exiger, les
-        démarches — avec les liens directs vers les sites officiels. Un mode visite pour tout
-        vérifier sur place.
-      </p>
-
-      <h2>Vous connaissez vos droits</h2>
-      <p>
-        L'historique complet des catastrophes naturelles de la commune — ce que le vendeur doit
-        vous déclarer. Vos droits d'indemnisation CatNat : délais, obligations de l'assureur,
-        recours.
-      </p>
-
-      <h2>Vous avez des preuves</h2>
-      <p>
-        Export PDF daté du diagnostic complet, à partager au notaire, à l'agent immobilier, à votre
-        famille. Comparez plusieurs adresses côte à côte avant de choisir.
-      </p>
-
-      <h2>Et rien d'autre</h2>
-      <p>
-        Pas de compte, pas de pub, pas de données collectées — tout reste sur votre téléphone. La
-        recherche et le score de synthèse sont gratuits, sans limite.
-      </p>
+  <header class="entete">
+    <div class="conteneur">
+      <a class="marque" href="./">
+        <img src="assets/img/icone.png" alt="" width="36" height="36" />
+        RisqCheck
+      </a>
+      <nav>
+        <a href="articles/">Articles</a>
+        <a href="support.html">Support</a>
+        <a class="bouton" href="https://apps.apple.com/fr/app/id6790358442" style="padding: 10px 18px; font-size: 0.9rem;">Télécharger</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="carte">
-      <h2>Contact</h2>
-      <p>Une question, un problème, une suggestion ?</p>
-      <p><a href="mailto:support.risqcheck@gmail.com">support.risqcheck@gmail.com</a></p>
-      <p>Réponse sous 48 h ouvrées, généralement bien plus vite.</p>
+  <section class="hero">
+    <div class="conteneur">
+      <div>
+        <h1>Les risques naturels de n'importe quelle adresse, en 5 secondes</h1>
+        <p class="accroche">
+          Inondation, argile, radon, séisme, catastrophes naturelles… Tapez une adresse :
+          RisqCheck analyse les 18 risques naturels et technologiques à partir des données
+          officielles Géorisques — les mêmes que celles des notaires, enfin lisibles.
+        </p>
+        <div class="actions">
+          <a class="badge-store" href="https://apps.apple.com/fr/app/id6790358442">
+            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/fr-fr?size=250x83" alt="Télécharger dans l'App Store" height="54" />
+          </a>
+        </div>
+        <p class="mention">Gratuit, sans compte, sans publicité. Tout reste sur votre téléphone.</p>
+      </div>
+      <div class="telephone">
+        <img src="assets/img/screenshot-diagnostic.png" alt="Diagnostic RisqCheck d'une adresse : score de synthèse et liste des risques" width="280" height="606" />
+      </div>
     </div>
+  </section>
 
-    <div class="carte">
-      <h2>D'où viennent les données ?</h2>
-      <p>
-        RisqCheck interroge les données publiques officielles : Géorisques (BRGM / Ministère de la
-        Transition écologique, Licence Ouverte Etalab 2.0) pour les risques, et la Base Adresse
-        Nationale pour le géocodage. Les informations affichées sont celles des bases publiques au
-        moment de la consultation.
+  <section class="section section-sable">
+    <div class="conteneur">
+      <h2>Ces informations sont publiques. Elles vous appartiennent.</h2>
+      <p class="sous-titre">RisqCheck vous les rend, sans jargon et sans alarmisme.</p>
+      <div class="benefices">
+        <div class="benefice">
+          <div class="picto">🔎</div>
+          <h3>Vous savez tout, en 5 secondes</h3>
+          <p>
+            Argile, inondation, remontée de nappe, radon, séisme, sites pollués, cavités…
+            Le diagnostic complet de n'importe quelle adresse en France, avec le niveau
+            d'exposition à l'adresse près.
+          </p>
+        </div>
+        <div class="benefice">
+          <div class="picto">💬</div>
+          <h3>Vous comprenez, sans jargon</h3>
+          <p>
+            Chaque risque expliqué simplement : c'est quoi, ce que ça implique pour vous,
+            ce qu'il faut savoir. Les sigles (ERP, CatNat, PPRI…) expliqués d'un tap.
+          </p>
+        </div>
+        <div class="benefice">
+          <div class="picto">✅</div>
+          <h3>Vous savez quoi faire</h3>
+          <p>
+            Une checklist personnalisée selon les risques de l'adresse et votre situation
+            (j'achète, je loue, propriétaire) : questions à poser, documents à exiger,
+            démarches — avec les liens officiels.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="conteneur">
+      <h2>Pensée pour les moments qui comptent</h2>
+      <p class="sous-titre">Avant d'acheter, avant de louer, ou pour connaître votre propre adresse.</p>
+      <div class="galerie">
+        <figure>
+          <img src="assets/img/screenshot-diagnostic.png" alt="Écran de diagnostic : score et 18 risques analysés" loading="lazy" width="230" height="498" />
+          <figcaption>Tout savoir en 5 secondes</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/screenshot-detail.png" alt="Détail d'un risque expliqué simplement" loading="lazy" width="230" height="498" />
+          <figcaption>Comprendre, sans jargon</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/screenshot-checklist.png" alt="Checklist personnalisée acheteur ou locataire" loading="lazy" width="230" height="498" />
+          <figcaption>Savoir quoi faire</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/screenshot-droits.png" alt="Historique des catastrophes naturelles et droits d'indemnisation" loading="lazy" width="230" height="498" />
+          <figcaption>Connaître vos droits</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/screenshot-comparateur.png" alt="Comparaison de plusieurs adresses et export PDF" loading="lazy" width="230" height="498" />
+          <figcaption>Des preuves à partager</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-sable">
+    <div class="conteneur">
+      <h2>Des données officielles, rien d'autre</h2>
+      <div class="confiance" style="margin-top: 36px;">
+        <div class="carte">
+          <h3>Sources publiques</h3>
+          <p>
+            Géorisques (BRGM / Ministère de la Transition écologique) pour les risques,
+            Base Adresse Nationale pour le géocodage. Licence Ouverte Etalab 2.0.
+          </p>
+        </div>
+        <div class="carte">
+          <h3>Zéro collecte</h3>
+          <p>
+            Pas de compte, pas de pub, pas de tracker. Vos recherches restent sur votre
+            téléphone — l'app n'a aucun serveur.
+          </p>
+        </div>
+        <div class="carte">
+          <h3>Paiement unique</h3>
+          <p>
+            La recherche et le score de synthèse sont gratuits, sans limite. Les contenus
+            avancés se débloquent par un achat unique — pas d'abonnement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="conteneur">
+      <div class="reglementaire">
+        <h2>Depuis juillet 2026, l'information argile est obligatoire</h2>
+        <p>
+          Pour toute vente ou location, l'information sur le retrait-gonflement des argiles
+          doit désormais être portée à la connaissance de l'acquéreur ou du locataire.
+          RisqCheck vous donne une longueur d'avance : le niveau d'exposition de l'adresse,
+          expliqué simplement, avant même de demander les documents officiels.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TODO articles : réactiver quand les 3 premiers articles existent (garder les slugs)
+  <section class="section">
+    <div class="conteneur">
+      <h2>Comprendre les risques, adresse par adresse</h2>
+      <p class="sous-titre">Des guides simples, fondés sur les données publiques.</p>
+      <div class="cartes-articles">
+        <a class="carte-article" href="articles/zone-inondable-adresse.html">
+          <span class="etiquette">Inondation</span>
+          <h3>Ma maison est-elle en zone inondable ? Vérifier une adresse en 2 minutes</h3>
+          <p>Les cartes officielles, où les trouver, comment les lire.</p>
+        </a>
+        <a class="carte-article" href="articles/zone-argile-maison.html">
+          <span class="etiquette">Argile</span>
+          <h3>Zone argile : comment savoir si votre maison est concernée</h3>
+          <p>Retrait-gonflement, fissures, et la nouvelle obligation de juillet 2026.</p>
+        </a>
+        <a class="carte-article" href="articles/etat-des-risques-erp-guide.html">
+          <span class="etiquette">Réglementation</span>
+          <h3>État des risques (ERP) : obligatoire pour vendre ou louer ?</h3>
+          <p>Qui doit le fournir, quand, et ce qu'il doit contenir. Guide 2026.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <section class="cta-final section-sable">
+    <div class="conteneur">
+      <h2>Vérifiez votre adresse, maintenant</h2>
+      <p>Gratuit, sans compte. En 5 secondes, vous savez.</p>
+      <a class="badge-store" href="https://apps.apple.com/fr/app/id6790358442">
+        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/fr-fr?size=250x83" alt="Télécharger dans l'App Store" height="54" style="margin: 0 auto;" />
+      </a>
+    </div>
+  </section>
+
+  <footer class="pied">
+    <div class="conteneur">
+      <nav>
+        <a href="https://apps.apple.com/fr/app/id6790358442">App Store</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Confidentialité</a>
+        <a href="articles/">Articles</a>
+      </nav>
+      <p class="avertissement">
+        RisqCheck est un outil d'information. Il ne remplace pas l'état des risques
+        réglementaire (ERP) remis lors d'une vente ou d'une location.
+        Données : Géorisques — Licence Ouverte Etalab 2.0.
       </p>
+      <p>© 2026 RisqCheck — application iOS</p>
     </div>
+  </footer>
 
-    <div class="carte">
-      <h2>L'app remplace-t-elle l'état des risques (ERP) ?</h2>
-      <p>
-        Non. RisqCheck est un outil d'information et de préparation. L'état des risques
-        réglementaire remis lors d'une vente ou d'une location reste le document officiel.
-      </p>
-    </div>
-
-    <div class="carte">
-      <h2>Comment restaurer mes achats ?</h2>
-      <p>
-        Dans l'app : Réglages → « Restaurer mes achats », avec le compte Apple utilisé lors de
-        l'achat. Les achats sont des paiements uniques gérés par Apple — pas d'abonnement.
-      </p>
-    </div>
-
-    <p class="pied">
-      <a href="privacy.html">Politique de confidentialité</a> · RisqCheck — application iOS
-    </p>
-  </div>
 </body>
 </html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://paprika92.github.io/risqcheck-site/sitemap.xml
