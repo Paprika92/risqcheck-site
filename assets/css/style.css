@@ -1,0 +1,422 @@
+/* RisqCheck — feuille de style partagée (landing + articles)
+   Palette et typo alignées sur le design system de l'app (tokens.ts / DESIGN.md) */
+
+:root {
+  --fond: #FAFAF7;
+  --carte: #FFFFFF;
+  --foret: #2D5A3D;
+  --sauge: #8FAE8B;
+  --terre: #C4A57B;
+  --sable: #EDE6DA;
+  --texte: #1A1F1A;
+  --texte2: #6B7268;
+  --radius-carte: 16px;
+  --radius-grand: 20px;
+  --ombre: 0 2px 8px rgba(26, 31, 26, 0.05);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', -apple-system, 'Segoe UI', 'Helvetica Neue', sans-serif;
+  background: var(--fond);
+  color: var(--texte);
+  line-height: 1.65;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: var(--foret); }
+
+.conteneur {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- En-tête ---------- */
+
+.entete {
+  padding: 20px 0;
+}
+
+.entete .conteneur {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.marque {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--texte);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.marque img {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+}
+
+.entete nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.95rem;
+}
+
+.entete nav a {
+  text-decoration: none;
+  color: var(--texte2);
+  font-weight: 500;
+}
+
+.entete nav a:hover { color: var(--foret); }
+
+/* ---------- Boutons ---------- */
+
+.bouton {
+  display: inline-block;
+  background: var(--foret);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 14px;
+  transition: opacity 0.15s ease;
+}
+
+.bouton:hover { opacity: 0.9; }
+
+.badge-store img { height: 54px; width: auto; }
+
+/* ---------- Héro ---------- */
+
+.hero {
+  padding: 48px 0 72px;
+}
+
+.hero .conteneur {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  line-height: 1.15;
+  margin: 0 0 16px;
+  color: var(--foret);
+  font-weight: 700;
+}
+
+.hero .accroche {
+  font-size: 1.15rem;
+  color: var(--texte2);
+  margin: 0 0 28px;
+  max-width: 34em;
+}
+
+.hero .actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero .mention {
+  margin-top: 14px;
+  font-size: 0.85rem;
+  color: var(--texte2);
+}
+
+/* Cadre téléphone autour du screenshot */
+
+.telephone {
+  justify-self: center;
+  width: min(300px, 80vw);
+  border-radius: 40px;
+  padding: 10px;
+  background: var(--texte);
+  box-shadow: 0 12px 40px rgba(26, 31, 26, 0.18);
+}
+
+.telephone img {
+  border-radius: 32px;
+  width: 100%;
+}
+
+/* ---------- Sections ---------- */
+
+.section { padding: 64px 0; }
+
+.section-sable { background: var(--sable); }
+
+.section h2 {
+  font-size: 1.9rem;
+  color: var(--foret);
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
+.section .sous-titre {
+  color: var(--texte2);
+  margin: 0 0 36px;
+  max-width: 40em;
+}
+
+/* ---------- Bénéfices ---------- */
+
+.benefices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.benefice {
+  background: var(--carte);
+  border-radius: var(--radius-carte);
+  padding: 28px 24px;
+  box-shadow: var(--ombre);
+}
+
+.benefice .picto {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--sable);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+}
+
+.benefice h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.benefice p {
+  margin: 0;
+  color: var(--texte2);
+  font-size: 0.97rem;
+}
+
+/* ---------- Galerie screenshots ---------- */
+
+.galerie {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 8px 4px 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.galerie figure {
+  margin: 0;
+  flex: 0 0 auto;
+  width: 230px;
+  scroll-snap-align: start;
+}
+
+.galerie img {
+  border-radius: var(--radius-grand);
+  box-shadow: 0 6px 24px rgba(26, 31, 26, 0.12);
+}
+
+.galerie figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--texte2);
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+/* ---------- Confiance ---------- */
+
+.confiance {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.confiance .carte {
+  background: var(--carte);
+  border-radius: var(--radius-carte);
+  padding: 24px;
+  box-shadow: var(--ombre);
+}
+
+.confiance h3 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.confiance p {
+  margin: 0;
+  color: var(--texte2);
+  font-size: 0.95rem;
+}
+
+/* ---------- Bandeau réglementaire ---------- */
+
+.reglementaire {
+  background: var(--carte);
+  border-left: 4px solid var(--terre);
+  border-radius: var(--radius-carte);
+  padding: 28px 32px;
+  box-shadow: var(--ombre);
+}
+
+.reglementaire h2 { font-size: 1.4rem; }
+
+.reglementaire p {
+  margin: 8px 0 0;
+  color: var(--texte2);
+  max-width: 52em;
+}
+
+/* ---------- Articles ---------- */
+
+.cartes-articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.carte-article {
+  display: block;
+  background: var(--carte);
+  border-radius: var(--radius-carte);
+  padding: 24px;
+  box-shadow: var(--ombre);
+  text-decoration: none;
+  transition: transform 0.15s ease;
+}
+
+.carte-article:hover { transform: translateY(-2px); }
+
+.carte-article .etiquette {
+  display: inline-block;
+  background: var(--sable);
+  color: var(--foret);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.carte-article h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  color: var(--texte);
+  font-weight: 600;
+}
+
+.carte-article p {
+  margin: 0;
+  color: var(--texte2);
+  font-size: 0.92rem;
+}
+
+/* ---------- CTA final ---------- */
+
+.cta-final {
+  text-align: center;
+  padding: 72px 0;
+}
+
+.cta-final h2 {
+  font-size: 1.9rem;
+  color: var(--foret);
+  margin: 0 0 12px;
+}
+
+.cta-final p {
+  color: var(--texte2);
+  margin: 0 0 28px;
+}
+
+/* ---------- Pied de page ---------- */
+
+.pied {
+  background: var(--sable);
+  padding: 40px 0;
+  font-size: 0.9rem;
+  color: var(--texte2);
+}
+
+.pied .conteneur {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pied nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pied a { color: var(--foret); text-decoration: none; }
+.pied a:hover { text-decoration: underline; }
+
+.pied .avertissement {
+  font-size: 0.82rem;
+  max-width: 60em;
+}
+
+/* ---------- Pages articles ---------- */
+
+.article-corps {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+}
+
+.article-corps h1 {
+  color: var(--foret);
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.article-corps h2 {
+  color: var(--foret);
+  font-size: 1.35rem;
+  margin-top: 40px;
+}
+
+.article-corps .cta-encart {
+  background: var(--sable);
+  border-radius: var(--radius-carte);
+  padding: 24px;
+  margin: 32px 0;
+  text-align: center;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 860px) {
+  .hero .conteneur { grid-template-columns: 1fr; gap: 40px; }
+  .hero h1 { font-size: 2rem; }
+  .telephone { order: 2; }
+  .benefices, .confiance, .cartes-articles { grid-template-columns: 1fr; }
+  .section { padding: 48px 0; }
+  .entete nav { gap: 14px; font-size: 0.9rem; }
+}
