@@ -83,6 +83,13 @@ a { color: var(--foret); }
 
 .entete nav a:hover { color: var(--foret); }
 
+/* Le bouton Télécharger du header hérite sinon du gris des liens de nav */
+.entete nav a.bouton,
+.entete nav a.bouton:visited,
+.entete nav a.bouton:hover {
+  color: #FFFFFF;
+}
+
 /* ---------- Boutons ---------- */
 
 .bouton {
